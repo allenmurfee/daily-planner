@@ -1,13 +1,13 @@
 var saveBtn = $("btn");
 var today = moment().format("MM.DD.YYYY");
 var hour = $(".hour");
-var currentHour = moment().hour();
+var currentHour = moment(hour).format("h")
 var now = moment();
 
-// var index = 0;
 
 //Sets day
 $("#currentDay").text("Today is " + today);
+
 
 //Changes color based on hour of day
 function time() {
@@ -25,17 +25,15 @@ function time() {
   });
 }
 
-//Calls time function
 
+//Calls time function
 time();
 
 
-
-saveBtn.each(function () {
+// Saves text area input value
+$(".btn").on ("click", function () {
   // Need to set local storage to be user text input
-  var textInput = $(this).on("click", function () {
-    $(this).parent().$(".input").value;
+    var textInput = $(this).siblings(".input").val();
+    console.log(textInput);
     localStorage.setItem("input", textInput)
-    console.log(textInput)
   });
-});
