@@ -12,7 +12,9 @@ In the past, we learned how to set a variable and then attach that value to a st
 
 ## Installation
 
-No installation is required. Visit \*insert URL. All your inputs will be saved in local storage, so no additional steps are required on your part.
+No installation is required. Visit https://allenmurfee.github.io/daily-planner/.
+
+All your inputs will be saved in local storage, so no additional steps are required on your part.
 
 ## Usage
 
